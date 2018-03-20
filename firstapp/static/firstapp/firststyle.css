@@ -1,0 +1,12 @@
+body {
+    background: white url("images/kd.png") no-repeat right bottom;
+}
+
+#p1_tag{
+    background-color: white;
+}
+
+.ptag{
+    font-family: "Bitstream Vera Sans Mono";
+    font-size: 70px;
+}

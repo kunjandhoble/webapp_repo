@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link rel="stylesheet" type="text/css" href="{% static 'firstapp/firststyle.css' %}" />
+</head>
+<body>
+{#<p>{{ val_key }}</p>#}
+<br>
+<br>
+
+<br>
+<br>
+
+
+<p id="p1_tag" class="ptag">VALUE LIST:</p>
+<input id="button_tag" type="button" onclick="myFunction()" value="Click Me"/>
+<p id="p3_tag" class="ptag">VALUE LIST:</p>
+<p id="p4_tag" class="ptag">VALUE LIST:</p>
+
+{#<div>{% for i in val_list_key %}#}
+{#    {% if i == 4 %}#}
+{#    <span>VALUE IS FOUR: {{ i }}</span>#}
+{#    {% else %}#}
+{#    <span>NO VALUE</span>#}
+{#    {% endif %}#}
+{#{% endfor %}#}
+
+{#</div>#}
+<script type="text/javascript">
+function myFunction() {
+    alert('message');
+    var x = document.getElementsByClassName("ptag");
+    x[1].style.fontSize = "100px";
+    x[0].innerHTML = 'HI';
+    x[2].innerHTML = 'Good Day!';
+}
+</script>
+</body>
+</html>
